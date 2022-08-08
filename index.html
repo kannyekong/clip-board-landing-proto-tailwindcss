@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Project 1 - Clipboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a5eaa37463.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              bgHeaderDesktop: 'url("images/bg-header-desktop.png")',
+              bgHeaderMobile: 'url("images/bg-header-mobile.png")',
+              bgGradient: "linear-gradient(red, white)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col items-center min-h-screen justify-center bg-cover bg-bgHeaderMobile md:bgHeaderDesktop bgGradient"
+    >
+      <!-- Logo -->
+      <div class="mt-[100px]">
+        <svg width="125" height="125" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#26BBA4" stroke-width="10" fill="none" fill-rule="evenodd">
+            <circle cx="62.5" cy="62.5" r="57.5" />
+            <path
+              d="M85.481 85.481c-12.692 12.692-33.27 12.692-45.962 0s-12.692-33.27 0-45.962 33.27-12.692 45.962 0"
+              stroke-linecap="round"
+            />
+          </g>
+        </svg>
+      </div>
+
+      <!-- SECTION 1: Banner -->
+
+      <div class="text-center space-y-4 mt-6">
+        <h1
+          class="font-sans text-[2rem] md:text-7xl p-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-green-300 to-blue-700"
+        >
+          A history of everything you copy
+        </h1>
+        <p
+          class="font-light text-2xl text-xl p-4 text-zinc-400 md:leading-loose"
+        >
+          Clipboard allows you to track and organize everything you copy.<br />
+          Instantly access your clipboard on all your devices.
+        </p>
+      </div>
+
+      <!-- Buttons -->
+      <div
+        class="flex flex-col space-y-6 mt-4 md:flex-row md:space-x-8 md:space-y-0 md:w-auto"
+      >
+        <button class="p-4 rounded-3xl text-white bg-green-400 w-[400px]">
+          Download for iOS
+        </button>
+        <button class="p-4 rounded-3xl text-white bg-blue-400 w-[400px]">
+          Download for Mac
+        </button>
+      </div>
+    </div>
+
+    <!-- SECTION 2 : Snippets-->
+
+    <div class="text-center space-y-2 mt-48">
+      <h1
+        class="font-mono text-[2rem] p-8 md:text-[3rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-green-900"
+      >
+        Keep track of your snippets
+      </h1>
+      <p class="font-light text-2xl p-4 text-zinc-400 md:leading-loose">
+        Clipboard instantly stores any item you copy in the cloud, meaning you
+        can access<br />
+        your snippets immediately on all your devices. Our Mac and iOS apps will
+        help you<br />
+        organize everything.
+      </p>
+    </div>
+    <div class="flex flex-col md:flex-row mt-10 space-y-6 space-x-12">
+      <img src="images/image-computer.png" alt="" class="p-8" />
+      <div class="flex flex-col space-y-6 p-8">
+        <div>
+          <h3 class="text-2xl font-bold font-mono">Quick Search</h3>
+          <p class="text-xl text-zinc-400">
+            Easily search your snippets by content,<br />
+            category, web address, application, and<br />
+            more.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold font-mono">iCloud Sync</h3>
+          <p class="text-xl text-zinc-400">
+            Instantly saves and syncs snippets across<br />
+            all your devices.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold font-mono">Completely History</h3>
+          <p class="text-xl text-zinc-400">
+            Retrieve any snippets from the first moment<br />
+            you started using the app.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Access Clipboard Anywhere -->
+    <div class="text-center space-y-2 md:space-y-0 mt-48">
+      <h1
+        class="font-mono text-[2rem] p-8 md:text-[3rem] font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-green-900"
+      >
+        Access Clipboard Anywhere
+      </h1>
+      <p class="font-light text-2xl p-4 text-zinc-400">
+        Whether you are on the go, or at your computer, you can access all your
+        Clipboard<br />
+        snippets in a few simple clicks
+      </p>
+      <div class="flex flex-col items-center justify-center">
+        <img src="images/image-devices.png" alt="" />
+      </div>
+    </div>
+    <!-- SuperCharge Workflow -->
+    <div class="text-center md:space-y-0 mt-48 md:space-y-2">
+      <h1
+        class="font-mono text-[2rem] p-4 md:text-[3rem] font-bold text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-red-600"
+      >
+        Supercharge your workflow
+      </h1>
+      <p class="font-light text-2xl p-4 text-zinc-400">
+        We've got the tools to boost your productivity
+      </p>
+      <div
+        class="flex flex-col md:flex-row items-center justify-center mt-4 p-12 space-y-8 md:space-y-0 md:space-x-24"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/icon-blacklist.svg" alt="" class="w-10 h-10" />
+          <h1 class="font-bold text-2xl p-4 text-zinc-800">
+            Create Blacklists
+          </h1>
+          <p class="font-light font-sans">
+            Easily search your snippets by content, <br />
+            category, web address, application, and more.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/icon-text.svg" alt="" class="w-10 h-10" />
+          <h1 class="font-bold text-2xl p-4 text-zinc-800">
+            Plain Text Snippets
+          </h1>
+          <p class="font-light font-sans">
+            Remove unwanted formatting from copied<br />
+            text for a consistent look.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="images/icon-preview.svg" alt="" class="w-10 h-8" />
+          <h1 class="font-bold text-2xl p-4 text-zinc-800">
+            Create Blacklists
+          </h1>
+          <p class="font-light font-sans">
+            Quick preview of all snippets on your<br />
+            Clipboard for easy access.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center mt-24 justify-center md:space-x-24 space-y-12 md:space-y-0"
+      >
+        <img src="images/logo-google.png" alt="" class="w-58 h-12" />
+        <img src="images/logo-ibm.png" alt="" class="w-58 h-12" />
+        <img src="images/logo-microsoft.png" alt="" class="w-58 h-12" />
+        <img src="images/logo-hp.png" alt="" class="w-58 h-12" />
+        <img src="images/logo-vector-graphics.png" alt="" class="w-58 h-12" />
+      </div>
+    </div>
+    <!-- SECTION 4: Footer -->
+    <div class="flex flex-col items-center justify-center mt-48">
+      <div class="text-center space-y-4 mt-6">
+        <h1 class="font-mono text-[2rem] md:text-[3rem] p-4 font-bold">
+          Clipboard for iOS and MacOS
+        </h1>
+        <p
+          class="font-light text-2xl text-xl p-4 text-zinc-400 md:leading-loose"
+        >
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and<br />
+          you're ready to start adding to your clipboard.
+        </p>
+      </div>
+
+      <!-- Buttons -->
+      <div
+        class="flex flex-col space-y-6 mt-4 md:flex-row md:space-x-8 md:space-y-0 md:w-auto"
+      >
+        <button
+          class="p-4 rounded-3xl text-white bg-green-400 w-[400px] transition duration-1000 hover:-translate-y-1"
+        >
+          Download for iOS
+        </button>
+        <button class="p-4 rounded-3xl text-white bg-blue-400 w-[400px]">
+          Download for Mac
+        </button>
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:flex-row space-x-2 justify-center items-center bg-zinc-200 p-8 mt-12"
+    >
+      <div class="flex flex-col text-center">
+        <img src="images/logo.svg" alt="" class="w-12 h-12 md:mt-8" />
+      </div>
+      <div
+        class="flex flex-col space-y-8 mt-8 text-center md:p-12 md:flex-row md:space-x-12 md:space-y-0"
+      >
+        <a href="">FAQs</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Install Guide</a>
+        <a href="">Contact Us</a>
+        <a href="">Press Kit</a>
+      </div>
+      <div class="flex flex-row md:flex-row space-x-8 mt-4">
+        <img src="images/icon-facebook.svg" alt="" />
+        <img src="images/icon-instagram.svg" alt="" />
+        <img src="images/icon-twitter.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
